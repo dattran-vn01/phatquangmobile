@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OneGate.iml" filepath="$PROJECT_DIR$/OneGate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sala/Sala.iml" filepath="$PROJECT_DIR$/Sala/Sala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phatquangmobile.iml" filepath="$PROJECT_DIR$/phatquangmobile.iml" />
     </modules>
   </component>
 </project>
