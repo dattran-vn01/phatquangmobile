@@ -94,4 +94,5 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="title_activity_question2">Question2Activity</string>
+    <string name="title_activity_question3">Question3</string>
 </resources>
