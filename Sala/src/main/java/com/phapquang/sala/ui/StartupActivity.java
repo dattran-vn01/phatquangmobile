@@ -10,11 +10,9 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import com.phapquang.sala.R;
+import com.phapquang.sala.ui.settings.AppSettingActivity;
+import com.phapquang.sala.ui.settings.MeditationSettingActivity;
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- */
 public class StartupActivity extends AppCompatActivity {
     /**
      * Whether or not the system UI should be auto-hidden after
@@ -97,6 +95,8 @@ public class StartupActivity extends AppCompatActivity {
         findViewById(R.id.btn_meditation).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
+                Intent clock = new Intent(StartupActivity.this, MeditationSettingActivity.class);
+                StartupActivity.this.startActivity(clock);
                 return true;
             }
         });
@@ -109,8 +109,8 @@ public class StartupActivity extends AppCompatActivity {
         findViewById(R.id.btn_settings).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                Intent myIntent = new Intent(StartupActivity.this, SettingsActivity.class);
-                StartupActivity.this.startActivity(myIntent);
+                Intent settings = new Intent(StartupActivity.this, AppSettingActivity.class);
+                StartupActivity.this.startActivity(settings);
                 return true;
             }
         });

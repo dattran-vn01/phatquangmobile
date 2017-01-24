@@ -32,14 +32,17 @@
             android:label="@string/title_activity_question"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.SettingsActivity"
-            android:label="@string/title_activity_settings">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".ui.settings.AppSettingActivity"
+            android:label="@string/title_activity_app_settings">
         </activity>
+        <activity
+            android:name=".ui.settings.MeditationSettingActivity"
+            android:label="@string/title_activity_meditation_settings">
+        </activity>
+        <activity
+            android:name=".ui.ClockActivity"
+            android:label="@string/title_activity_clock"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
